@@ -1,0 +1,7 @@
+{
+  "name": "Smart-Grow",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
