@@ -1,28 +1,35 @@
-ion-menu-button {
-  color: var(--ion-color-primary);
+/* .barra-busqueda{
+ position: absolute;
+  width: 325px;
+  height: 34px;
+  left: 20px;
+  top: 158px;
+  
+  background: #E5E3C9;
+  border-radius: 30px;
+ 
+} */
+.slide{
+  
+  margin-left: 10px;
 }
+.catg{
+  background:  #94B49F;
+  height: 33px;
+ 
 
-#container {
-  text-align: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
 }
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
+.catg2{
+  background:  #94B49F;
+  height: 33px;
+  width: 189px;
   font-size: 16px;
-  line-height: 22px;
-  color: #8c8c8c;
-  margin: 0;
+  border-radius: 10px;
+  left: 20px;
 }
+.slide-ofertas{
+  height: 150px;
+  width: 313px;
 
-#container a {
-  text-decoration: none;
+
 }

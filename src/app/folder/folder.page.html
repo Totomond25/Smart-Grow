@@ -1,21 +1,63 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="true" class="ion-no-border">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
+      <ion-menu-button color="primary"></ion-menu-button>
     </ion-buttons>
-    <ion-title>{{ folder }}</ion-title>
+      <ion-button slot="icon-only" slot="end" >
+        <img src="../../../assets/icon/compras.png">
+      </ion-button>
+     <ion-item  lines="none">
+      <img src="../../../assets/icon/logo Smart-Grow.png">
+     </ion-item>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">{{ folder }}</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-searchbar class="barra-busqueda" showCancelButton="focus"></ion-searchbar>
+  
+  <ion-slides [options]="slideOpts">
+    <ion-slide *ngFor="let cat of catcards" >
+      <ion-buttons>
+        <ion-button class="catg" trans>{{ cat.title }} </ion-button>
+      </ion-buttons>
+    </ion-slide>
+  </ion-slides>
+  
 
-  <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <ion-slides class="slide" [options]="slideOpts">
+      <ion-slide *ngFor="let categoria of FakeArray"  >
+        <img class="cards" src="../../../assets/icon/cards-kit N°1.png">
+      </ion-slide>
+      <ion-slide  >
+        <img class="cards" src="../../../assets/icon/cards-kit N°1.png">
+      </ion-slide>
+      <ion-slide  >
+        <img class="cards" src="../../../assets/icon/cards-kit N°1.png">
+      </ion-slide>
+    </ion-slides>
+      <ion-buttons>
+        <ion-button class="catg2">Promos y Descuentos</ion-button>
+      </ion-buttons>
+      
+
+    <ion-slides [options]="slideOpts">
+      <ion-slide class="slide-ofertas" *ngFor="let ofertas of FakeArray"  >
+        <img  src="../../../assets/icon/rectangulo promos.png">
+      </ion-slide>
+      
+    </ion-slides>
+
+    <ion-buttons>
+      <ion-button class="catg2">Sugeridos para Ti</ion-button>
+    </ion-buttons>
+    
+    <ion-slides [options]="slideOpts">
+      <ion-slide class="slide-ofertas" *ngFor="let ofertas of FakeArray"  >
+        <img  src="../../../assets/icon/rectangulo promos.png">
+      </ion-slide>
+      
+    </ion-slides>
+
+
+    
 </ion-content>

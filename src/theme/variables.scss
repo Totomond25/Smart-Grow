@@ -197,7 +197,8 @@
    */
 
   .md body {
-    --ion-background-color: #121212;
+    --ion-background-color: #ffffff;
+    
     --ion-background-color-rgb: 18,18,18;
 
     --ion-text-color: #ffffff;
@@ -225,12 +226,18 @@
     --ion-color-step-900: #e7e7e7;
     --ion-color-step-950: #f3f3f3;
 
-    --ion-item-background: #1e1e1e;
+    --ion-item-background: #8c786900;
+    
+    --ion-toolbar-background: #b7353500;
 
-    --ion-toolbar-background: #1f1f1f;
-
-    --ion-tab-bar-background: #1f1f1f;
+    --ion-tab-bar-background: #959c28;
 
     --ion-card-background: #1e1e1e;
+
+
+  }
+  .bg-app{
+    --background:rgba(140, 120, 105, 0.9);
   }
 }
+
